@@ -1,5 +1,5 @@
-    <h1>Heart Disease Detection</h1>
-    <p>This project utilizes the Cleveland Heart Disease dataset to build a predictive model for detecting heart disease presence. The dataset consists of 14 attributes, including age, sex, chest pain type, blood pressure, cholesterol levels, and other physiological metrics.</p>
+<h1>Heart Disease Detection</h1>
+<p>This project utilizes the Cleveland Heart Disease dataset to build a predictive model for detecting heart disease presence. The dataset consists of 14 attributes, including age, sex, chest pain type, blood pressure, cholesterol levels, and other physiological metrics.</p>
 
     <h2>Workflow</h2>
 
