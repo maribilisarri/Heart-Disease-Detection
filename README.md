@@ -1,42 +1,57 @@
-Heart Disease Detection
-This notebook explores the Cleveland Heart Disease dataset to build a model for predicting the presence of heart disease. The dataset contains 14 attributes, including age, sex, chest pain type, blood pressure, cholesterol levels, and various other physiological measurements.
+    <h1>Heart Disease Detection</h1>
+    <p>This project utilizes the Cleveland Heart Disease dataset to build a predictive model for detecting heart disease presence. The dataset consists of 14 attributes, including age, sex, chest pain type, blood pressure, cholesterol levels, and other physiological metrics.</p>
 
-Workflow:
+    <h2>Workflow</h2>
 
-Data Inspection and Preprocessing:
+    <h3>Data Inspection and Preprocessing</h3>
+    <ul>
+        <li>The dataset is loaded and examined for missing values and data types.</li>
+        <li>Missing values are handled by removing the corresponding rows.</li>
+        <li>Data types are converted to numeric format for compatibility with machine learning models.</li>
+        <li>Exploratory data analysis is performed to understand variable distributions and their relationships.</li>
+    </ul>
 
-The notebook begins by loading and inspecting the dataset, checking for missing values and data types.
-Missing values are handled by removing rows containing them.
-Data types are converted to numeric for compatibility with machine learning models.
-Exploratory data analysis is performed to understand the distribution of variables and relationships between them.
-Data Visualization:
+    <h3>Data Visualization</h3>
+    <ul>
+        <li>Histograms and density plots visualize the distribution of features for patients with and without heart disease.</li>
+        <li>These visuals help identify important predictive features.</li>
+        <li>The dataset is scaled using <code>StandardScaler</code> to ensure balanced feature influence and avoid large values.</li>
+    </ul>
 
-Histograms and density plots are used to visualize the distribution of individual features for patients with and without heart disease.
-These visualizations provide insights into the importance of different features in predicting heart disease.
-The data is scaled using StandardScaler to avoid any dominance of some features over others and also to avoid very high values.
-Model Building and Training:
+    <h2>Model Building and Training</h2>
 
-Categorical Classification:
-The notebook builds a categorical classification model to predict the severity of heart disease (0-4).
-It uses a Keras sequential model with three dense layers, ReLU activation in the hidden layers, and softmax activation in the output layer.
-The model is trained using the Adam optimizer and categorical cross-entropy loss.
-Binary Classification:
-The target variable is converted into a binary representation (0 for no heart disease, 1 for presence of heart disease).
-A separate binary classification model is built using a similar architecture as the categorical model.
-It uses sigmoid activation in the output layer and binary cross-entropy loss.
-Scaling the data is also used to perform binary classification
-Evaluation and Results:
+    <h3>Categorical Classification</h3>
+    <p>A categorical classification model predicts the severity of heart disease (0-4) using a Keras sequential model with:</p>
+    <ul>
+        <li>Three dense layers with ReLU activation in the hidden layers and softmax in the output layer.</li>
+        <li>The model is trained using the Adam optimizer and categorical cross-entropy loss.</li>
+    </ul>
 
-Both models are evaluated using accuracy and a classification report.
-The results show that the model achieved decent accuracy on the test set, demonstrating its ability to predict heart disease.
-Key Findings:
+    <h3>Binary Classification</h3>
+    <p>The target variable is converted to binary (0 for no heart disease, 1 for presence of heart disease). A binary classification model is built using:</p>
+    <ul>
+        <li>Similar architecture to the categorical model, but with sigmoid activation in the output layer and binary cross-entropy loss.</li>
+        <li>Data scaling is applied to enhance binary classification accuracy.</li>
+    </ul>
 
-Several features, such as chest pain type, maximum heart rate achieved, and exercise-induced angina, show clear distinctions between patients with and without heart disease.
-The model demonstrates the potential for using machine learning to assist in heart disease diagnosis and risk assessment.
-By using a scaled dataset a better accuracy is obtained
-Next Steps:
+    <h2>Evaluation and Results</h2>
+    <ul>
+        <li>Both models are evaluated using accuracy metrics and a classification report.</li>
+        <li>Results indicate the model achieved good accuracy on the test set, highlighting its predictive capability.</li>
+    </ul>
 
-Explore advanced feature engineering techniques to further improve model performance.
-Experiment with different models, hyperparameter tuning, and cross-validation to optimize the model.
-Validate the model on a larger, independent dataset for robustness.
-Develop an interactive web application to make the model accessible to healthcare professionals.
+    <h2>Key Findings</h2>
+    <p>Key predictive features include:</p>
+    <ul>
+        <li>Chest pain type, maximum heart rate achieved, and exercise-induced angina show distinct patterns between patients with and without heart disease.</li>
+        <li>The model's success suggests machine learning's potential in heart disease diagnosis and risk assessment.</li>
+        <li>Data scaling enhances model accuracy significantly.</li>
+    </ul>
+
+    <h2>Next Steps</h2>
+    <ul>
+        <li>Explore advanced feature engineering to improve model performance.</li>
+        <li>Experiment with alternative models, hyperparameter tuning, and cross-validation.</li>
+        <li>Validate the model on larger, independent datasets to assess robustness.</li>
+        <li>Develop an interactive web application to make the model accessible to healthcare professionals.</li>
+    </ul>
